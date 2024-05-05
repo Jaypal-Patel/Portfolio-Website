@@ -1,0 +1,696 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  text-transform: capitalize;
+  outline: none;
+  border: none;
+  transition: all .2s linear;
+}
+
+html {
+  font-size: 60.5%;
+  /* overflow: hidden; */
+  scroll-behavior: smooth;
+}
+body {
+  background-color: #f7f7f7;
+  font-family: "poppins", sans-serif;
+}
+
+section {
+  height: 100vh;
+  padding: 2rem 9%;
+  padding-top: 68px;
+}
+
+section .heading {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: rgb(32, 32, 32);
+  text-align: center;
+}
+
+/***************** Header Section ********************/
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  height: 6.5rem;
+  padding: 1.7rem 10%;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(00, 00, 00, 0.1);
+}
+
+header .logo_bar a {
+  font-size: 1.9rem;
+  font-weight: 800;
+  color: #0e2431;
+}
+
+header .logo_bar a:hover {
+  font-size: 2rem;
+  color: #ff7b00;
+}
+
+.menu {
+  display: none;
+}
+
+#cloes {
+  display: none;
+}
+
+header .navbar ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+}
+
+header .navbar ul li {
+  margin-left: 2.5rem;
+}
+
+header ul li a {
+  font-size: 1.57rem;
+  font-weight: 600;
+  letter-spacing: 0.04rem;
+  color: #0e2431;
+}
+
+header ul li a:hover {
+  
+  color: #2b3bda;
+  border-bottom: 0.2rem solid #2b3bda;
+  padding: 0.5rem 0;
+}
+
+/*********************  Home Seaction ******************************/
+
+.home_section {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.home_section h1 {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #002057;
+}
+
+.home_section h1 span {
+  color: #ff7b00;
+}
+
+.home_section p {
+  font-size: 2.3rem;
+  font-weight: 500;
+  color: #000;
+  margin-top: 1rem;
+  margin-bottom: 0.8rem;
+}
+
+.home_section #aboutBtn {
+  position: relative;
+  top: 1rem;
+  background-color: #2506ad;
+  color: white;
+  padding: 1.6rem 3rem;
+  border-radius: 4rem;
+  box-shadow: 0 0 8px rgba(00, 00, 00, 0.3);
+}
+
+.home_section #aboutBtn:hover {
+  background-color: #232b71;
+  color: #fff;
+  box-shadow: 0 0 16px rgba(00, 00, 00, 0.3);
+}
+
+
+.home_section #aboutBtn span {
+  font-size: 1.7rem;
+  font-weight: 700;
+  letter-spacing: 0.1rem;
+}
+
+.home_section #aboutBtn i {
+  font-size: 1.5rem;
+  margin-left: 0.3rem;
+}
+
+.home_section .social_media {
+  position: relative;
+  margin-top: 7rem;
+  margin-bottom: 14px;
+  flex-wrap: wrap;
+}
+
+.home_section .social_media i {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #00d9ff;
+  background-color: #09011b;
+  line-height: 44px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  margin-right: 8px;
+  border-radius: 100%;
+}
+
+.home_section .social_media .one:hover {
+  background-color: #00d9ff;
+  color: #fff;
+}
+
+.home_section .social_media .two:hover {
+  color: #fff;
+}
+
+.home_section .social_media .three:hover {
+  background-color: rgb(203, 36, 187);
+  color: #fff;
+}
+
+.home_section .image_section img {
+  height: 350px;
+  width: 350px;
+  border-radius: 100%;
+  box-shadow: 0 4px 8px rgba(00, 00, 00, 0.3);
+}
+
+.home_section .image_section img:hover {
+  height: 360px;
+  width: 360px;
+  box-shadow: 0 0 16px rgba(245, 209, 4, 0.925);
+}
+
+/************************ About Section ******************************/
+
+.about_section span {
+  color: rgb(115, 3, 167);
+}
+
+.about_section .main_content{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 2rem;
+  padding: 4rem;
+}
+
+.about_section #imagescard{
+  text-align: center;
+  flex: 1 1 35rem;
+}
+
+.about_section img{
+  margin: 4rem;
+  width: 25rem;
+  height: 82%;
+  border-radius: 5%;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+}
+
+.about_section img:hover{
+  width: 27.5rem;
+  transform:scaleX(44deg);
+  box-shadow: 0 6px 10px rgb(0, 0, 0);
+}
+
+.about_section #aboutuser{
+  flex: 1 1 45rem;
+  padding: 4rem;
+
+}
+
+.about_section h3{
+  font-size: 2.5rem;
+  color: rgb(27, 27, 27);
+}
+
+.about_section #role {
+  font-size: 1.6rem;
+  font-family: 600;
+  color: #010233;
+  margin-top: 1rem;
+}
+
+.about_section p {
+  font-size: 1.8rem;
+  font-family: 600;
+  margin-top: 1.5rem;
+  text-transform: none;
+  font-family: "Nunito";
+}
+
+.about_section p span {
+  color: #011aff;
+}
+
+.about_section #btn {
+  margin-top: 6rem;
+}
+
+.about_section a {
+  color: #fff;
+  background-color: #2506ad;
+  padding: 1.4rem 3rem;
+  border-radius: 0.6em;
+  font-size: 1.8rem;
+  font-weight: 600;
+  box-shadow: 0 5px 10px rgba(48, 68, 247, 0.6);
+}
+
+.about_section a:hover {
+  background-color: #200c7b;
+}
+
+.about_section button i {
+  font-size: 1.2rem;
+  margin-left: 0.3rem;
+  font-weight: 900;
+}
+
+/************************ Education Section ******************************/
+
+.education_section{
+  background-color: #e5ecfb;
+}
+
+.education_section .heading span {
+  color: rgb(115, 3, 167);
+}
+
+.education_section .pera {
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.education_section .container_box {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin-top: 2rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.education_section .box {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+  width: 80%;
+  border-radius: 0.5rem;
+  position: relative;
+  overflow: hidden;
+  background-color: rgb(252, 252, 252);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.education_section .image {
+  flex: 1 1 20rem;
+  width: 100%;
+}
+
+.education_section .image img {
+  object-fit: cover;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.education_section .info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding: 1rem;
+  flex: 1 1 70rem;
+}
+
+.education_section .info h3 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #012970;
+  padding: 0.5rem 0;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.education_section .info p {
+  font-size: 1.5rem;
+  text-align: left;
+  margin-left: 1rem;
+}
+
+.education_section .info h4 {
+  font-size: 2rem;
+  text-align: left;
+  margin: 1rem;
+  font-weight: 700;
+  color: rgb(34, 109, 0);
+  font-family: "Nunito", sans-serif;
+}
+
+/************************ Skill Section ******************************/
+
+.skill_section .heading span {
+  color: rgb(115, 3, 167);
+}
+
+.skill_section .skill_box {
+  display: flex;
+  justify-content: center;
+}
+
+.skill_section .second_box {
+  border: 2px solid black;
+  border-radius: 2rem;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 3rem;
+  width: 80%;
+}
+
+.skill_section .box {
+  margin: 3rem;
+}
+
+.skill_section .box h1 {
+  font-size: 2.5rem;
+  color: rgb(32, 32, 32);
+}
+
+.skill_section .box h1 img {
+  height: 22px;
+  width: 22px;
+}
+
+.skill_section .box p {
+  font-size: 1.8rem;
+  margin-top: .5rem;
+  margin-bottom: 1rem;
+}
+
+.skill_section .box img {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+/************************ Project Section ******************************/
+
+.project_section .project_container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.project_section .project_box {
+  text-align: center;
+  border: 2px solid black;
+  border-radius: 2rem;
+  width: 310px;
+  height: 450px;
+  padding: 3rem;
+  background-color: #fff;
+}
+
+.project_section .image_box {
+  width: 100%;
+  height: 250px;
+}
+
+.project_section .image_box img {
+  width: 100%;
+  height: 100%;
+  border-radius: 1.5rem;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.project_section .info_box h1 {
+  font-size: 2.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 3.5rem;
+}
+
+.project_section .btn_box {
+  margin-top: 2.5rem;
+}
+
+.project_section .btn_box a {
+  border: 2px solid black;
+  border-radius: 1.7rem;
+  background-color: #fff;
+  font-size: 1.3rem;
+  padding: .9rem 2.5rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 3rem;
+}
+
+.project_section .btn_box a:hover {
+  background-color: rgb(32, 32, 32);
+  color: #fff;
+}
+
+
+/************************ Contect Section ******************************/
+
+.contect_section {
+  height: auto;
+  background-color: #e5ecfb;
+}
+
+.contect_section .heading span {
+  color: rgb(115, 3, 167);
+}
+
+.contect_section .container {
+  background-color: #fff;
+  /* max-width: 1050px; */
+  width: 90%;
+  margin-top: 2rem;
+  border-radius: 1.5rem;
+  margin: 2rem auto;
+}
+
+.contect_section .form_contaier {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.contect_section .image_section {
+  width: 408px;
+  padding: 2.5rem 2rem;
+}
+
+.contect_section .image_section img {
+  width: 100%;
+  height: 40rem;
+  position: relative;
+}
+
+.contect_section .form_section {
+  width: 408px;
+  padding: 2.5rem 2rem;
+}
+
+.contect_section .form_group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contect_section .datails {
+  height: 50px;
+  display: flex;
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+}
+
+.contect_section .datails input {
+  width: 95%;
+  height: 100%;
+  outline: none;
+  border: 1px solid rgb(51, 51, 51);
+  border-radius: 5px;
+  background-color: #e5ecfb;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  padding: 0 16px 0 48px;
+}
+
+.contect_section .datails i {
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  color: rgb(51, 51, 51);
+  font-size: 17px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.contect_section .message {
+  position: relative;
+  margin: 1rem;
+  width: 100%;
+}
+
+.contect_section .message textarea {
+  min-height: 130px;
+  max-height: 230px;
+  width: 95%;
+  outline: none;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  padding: 12px 20px 0 48px;
+  border: 1px solid rgb(51, 51, 51);
+  border-radius: 5px;
+  background-color: #e5ecfb;
+}
+
+.contect_section .message i {
+  position: absolute;
+  top: 25px;
+  left: 15px;
+  font-size: 19px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  color: rgb(51, 51, 51);
+}
+
+.contect_section .btn_inp {
+  display: flex;
+  justify-content: right;
+}
+
+.contect_section button {
+  color: #fff;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 13px 25px;
+  background-color: #2506ad;
+  box-shadow: 0 5px 10px rgba(48, 68, 247, 0.6);
+}
+
+.contect_section button i {
+  font-size: 1.5rem;
+}
+
+/************************ Footer Section ******************************/
+
+footer {
+  background-color: rgb(0, 1, 0);
+  color: #fff;
+  padding: 0 102px 20px;
+}
+
+footer .details_box {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+footer .info_box {
+  margin: 25px;
+  flex: 1 1 25rem;
+}
+
+footer .info_box h3 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  color: #fff;
+  padding-bottom: 1rem;
+}
+
+footer .info_box p {
+  font-size: 1.5rem;
+  color: #ccc;
+  padding: 0.7rem 0;
+}
+
+footer .info_box a {
+  display: block;
+  font-size: 1.5rem;
+  color: rgb(238, 238, 238);
+  padding: 0.3rem 0;
+}
+
+footer .info_box a:hover {
+  color: #ffae00;
+}
+
+footer .info_box p i {
+  color: #ffae00;
+  padding-right: 1rem;
+}
+
+footer .social_link {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+footer .social_link a {
+  height: 4rem;
+  width: 4rem;
+  font-size: 1.7rem;
+  padding: 1rem;
+  margin-right: 1rem;
+  border-radius: 5rem;
+  text-align: center;
+  background-color: rgb(230, 230, 230);
+  color: #02094b;
+}
+
+footer .social_link a:hover {
+  color: #ff7b00;
+  background-color: rgb(0, 1, 0);
+  border: 1.5px solid rgb(230, 230, 230);
+}
+
+footer .message_box {
+  padding: 1rem 0 0 0;
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #fff;
+  border-top: 0.1rem solid #fff3;
+}
+
+footer .message_box a {
+  color:#ffae00;
+}
+
