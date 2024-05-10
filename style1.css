@@ -86,3 +86,30 @@
     gap: 0;
   }
 }
+
+@media (max-width: 390px) {
+  body {
+    margin: auto;
+  }
+
+  .about_section #aboutuser{
+    padding: 4rem 0;
+  }
+
+  .education_section .box {
+    width: 100%;
+  }
+  
+  .skill_section .second_box {
+    width: 100%;
+    margin: 4rem 0;
+  }
+
+  .contect_section .container {
+    width: 100%;
+  }
+
+  footer {
+    padding: 0 60px;
+  }
+}
